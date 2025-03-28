@@ -74,6 +74,9 @@
   background-color: #fff;
   border-top: 5px solid #FF7500;
   padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-container {
@@ -150,6 +153,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.hero-img {
+  border-radius: 8px;
+  position: absolute;
+  right: 20px;
+  top:  -40px;
+  box-shadow: 24px 24px 0 0 #FF750099;
 }
 
 .hero-line {
@@ -161,10 +173,7 @@
   color: #fff;
 }
 
-.hero-section img {
-  border-radius: 8px;
-  box-shadow: 24px 24px 0px 0px #FF750099;
-}
+
 
 
 .hero-title {
@@ -253,10 +262,14 @@
   align-items: center;
   padding: 64px;
   border-radius: 12px;
+  position: relative;
 }
 
-.sale img {
+.sale-img {
   border-radius: 12px;
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
 }
 
 .sale-content {
